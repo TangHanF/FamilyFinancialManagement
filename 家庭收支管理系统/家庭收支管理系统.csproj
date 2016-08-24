@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE519A19-7B3E-4C5D-989B-3D5D99897621}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>家庭收支管理系统</RootNamespace>
+    <AssemblyName>家庭收支管理系统</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>货币 小.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForms\AboutAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForms\AboutAuthor.Designer.cs">
+      <DependentUpon>AboutAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForms\AboutSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForms\AboutSoft.Designer.cs">
+      <DependentUpon>AboutSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddType.Designer.cs">
+      <DependentUpon>AddType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCount.Designer.cs">
+      <DependentUpon>AddCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditCount.Designer.cs">
+      <DependentUpon>EditCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditUserPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditUserPwd.Designer.cs">
+      <DependentUpon>EditUserPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindCount.Designer.cs">
+      <DependentUpon>FindCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegUsers.Designer.cs">
+      <DependentUpon>RegUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetYuSuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetYuSuan.Designer.cs">
+      <DependentUpon>SetYuSuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowRemark.Designer.cs">
+      <DependentUpon>ShowRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForms\AboutAuthor.resx">
+      <DependentUpon>AboutAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForms\AboutSoft.resx">
+      <DependentUpon>AboutSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddType.resx">
+      <DependentUpon>AddType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddCount.resx">
+      <DependentUpon>AddCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditCount.resx">
+      <DependentUpon>EditCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditUserPwd.resx">
+      <DependentUpon>EditUserPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindCount.resx">
+      <DependentUpon>FindCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegUsers.resx">
+      <DependentUpon>RegUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetYuSuan.resx">
+      <DependentUpon>SetYuSuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowRemark.resx">
+      <DependentUpon>ShowRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\LoginForm.datasource" />
+    <None Include="Properties\DataSources\MainForm.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\家庭收支管理系统.Forms.Edit.datasource" />
+    <None Include="Properties\DataSources\家庭收支管理系统.Forms.RegUsers.datasource" />
+    <None Include="Properties\DataSources\家庭收支管理系统.Forms.SetYuSuan.datasource" />
+    <None Include="Properties\DataSources\家庭收支管理系统.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\家庭收支管理系统.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Class\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Model.csproj">
+      <Project>{48ed5db4-e8c2-4b14-a2cf-7c3c6d43573d}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Family.BLL\Family.BLL.csproj">
+      <Project>{37d04038-6471-48ca-8e8c-996e609daad9}</Project>
+      <Name>Family.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{2a3084d8-6962-453d-a056-1a2ee0bbcbaa}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{900fadf5-4d5b-4435-a1ac-467565c8dd8f}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2014-05-12_113034.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加分组.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户登录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queding2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402833567_383224.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2014-06-15_201355.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查看搜索.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\不通过.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\通讯录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\我的微信服务号二维码.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backLeftMiaoBian.png" />
+    <None Include="Resources\修改 边框1.png" />
+    <None Include="Resources\添加 边框1.png" />
+    <None Include="Resources\查找 背景.png" />
+    <None Include="Resources\门.png" />
+    <None Include="Resources\门1.png" />
+    <None Include="Resources\修改密码 背景.png" />
+    <None Include="Resources\记事本.png" />
+    <None Include="Resources\计算器.png" />
+    <None Include="Resources\Excel.png" />
+    <None Include="Resources\Word.png" />
+    <None Include="Resources\问题.png" />
+    <None Include="Resources\信息.png" />
+    <None Include="Resources\导航背景.png" />
+    <None Include="Resources\记账查询Normal.png" />
+    <None Include="Resources\删除记账Enter.png" />
+    <None Include="Resources\删除记账Normal.png" />
+    <None Include="Resources\退出系统Enter.png" />
+    <None Include="Resources\退出系统Normal.png" />
+    <None Include="Resources\新增记账Enter.png" />
+    <None Include="Resources\新增记账Normal.png" />
+    <None Include="Resources\修改记账Enter.png" />
+    <None Include="Resources\修改记账Normal.png" />
+    <None Include="Resources\记账查询Enter.png" />
+    <None Include="Resources\确定Normal.png" />
+    <None Include="Resources\确定Enter.png" />
+    <None Include="Resources\取消Enter.png" />
+    <None Include="Resources\取消Normal.png" />
+    <Content Include="货币 小.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

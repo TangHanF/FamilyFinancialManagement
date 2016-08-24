@@ -1,0 +1,4 @@
+E:\C#\家庭收支管理系统\Tools\bin\Debug\Tools.dll
+E:\C#\家庭收支管理系统\Tools\bin\Debug\Tools.pdb
+E:\C#\家庭收支管理系统\Tools\obj\Debug\Tools.dll
+E:\C#\家庭收支管理系统\Tools\obj\Debug\Tools.pdb

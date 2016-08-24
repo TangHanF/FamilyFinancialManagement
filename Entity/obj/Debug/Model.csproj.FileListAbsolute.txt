@@ -1,0 +1,5 @@
+E:\C#\家庭收支管理系统\Entity\bin\Debug\Entity.dll
+E:\C#\家庭收支管理系统\Entity\bin\Debug\Entity.pdb
+E:\C#\家庭收支管理系统\Entity\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\C#\家庭收支管理系统\Entity\obj\Debug\Entity.dll
+E:\C#\家庭收支管理系统\Entity\obj\Debug\Entity.pdb
